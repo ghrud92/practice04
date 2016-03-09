@@ -11,8 +11,18 @@ public class Prob1 {
 		int inputNumber = scanner.nextInt();
 
 		/* 여기에 구현 코드를 작성 합니다. */
-		
-		scanner.close();
+		do
+		{
+			int sum = 0;
+			while(inputNumber>0){
+				sum += inputNumber;
+				inputNumber -= 2;
+			}
+			System.out.println("결과 값 : " + sum);
+			System.out.println();
+			System.out.print( "숫자를 입력하세요: " );
+			inputNumber = scanner.nextInt();
+		}while(true);
 	}
 
 }
